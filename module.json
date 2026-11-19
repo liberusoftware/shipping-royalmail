@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "name": "shipping-royalmail",
+  "display_name": "Shipping Royal Mail Adapter",
+  "description": "Royal Mail Click & Drop / Shipping REST API adapter extending liberusoftware/shipping-contracts.",
+  "version": "1.0.0",
+  "category": "adapter",
+  "provider": "Liberu\\Shipping\\RoyalMail\\RoyalMailShippingServiceProvider",
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/shipping-contracts": "^1.0"
+    }
+  },
+  "capabilities": [
+    "shipping.provider.royalmail"
+  ],
+  "default_enabled": true,
+  "features": [
+    "Royal Mail UK & International rate quoting",
+    "Click & Drop order & label creation",
+    "Order cancellation",
+    "Parcel tracking"
+  ]
+}
